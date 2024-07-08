@@ -51,7 +51,7 @@ def run():
     print('(4) Decision Tree')
     print('(5) All (can take longer time to finish)')
     
-    choice = eval(input('\n\rYour choice (1, 2, 3, 4, 5) (default = 5) : '))
+    choice = eval(input('\n\rYour choice (1, 2, 3, 4, 5) : '))
     classifier = None
 
     if (choice == 1):

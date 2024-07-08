@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler
 def data_preprocessing():
     print('Pre-Processing the data...')
     # import the dataset
-    dataset = pd.read_csv('../../dataset/creditcard.csv')
+    dataset = pd.read_csv('../../datasets/creditcard.csv')
 
     # Seperate the dependent and independent variables
     X = dataset.iloc[:, :-1].values

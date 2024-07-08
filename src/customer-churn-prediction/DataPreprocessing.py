@@ -11,7 +11,7 @@ def data_preprocessing():
     print('Pre-Processing the data...')
     
     # import the dataset
-    dataset = pd.read_csv('../../dataset/WA_Fn-UseC_-Telco-Customer-Churn.csv')
+    dataset = pd.read_csv('../../datasets/WA_Fn-UseC_-Telco-Customer-Churn.csv')
 
     # Seperate the dependent and independent variables
     X = dataset.iloc[:, 1:-1].values

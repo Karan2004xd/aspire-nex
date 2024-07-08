@@ -1,7 +1,6 @@
 from DataPreprocessing import data_preprocessing
 from TrainingModels import *
 from ModelEvaluation import get_auc
-from ANN import predict_using_ann
 
 def get_all_classifiers_dict(X_train, y_train):
     return {
@@ -44,9 +43,8 @@ def run():
     print('(3) Logistic Regression')
     print('(4) Decision Tree')
     print('(5) All (can take longer time to finish)')
-    print('(6) Using Artificial Neural Networks')
     
-    choice = eval(input('\n\rYour choice (1, 2, 3, 4, 5) (default = 5) : '))
+    choice = eval(input('\n\rYour choice (1, 2, 3, 4, 5) : '))
     classifier = None
 
     if (choice == 1):
@@ -57,8 +55,6 @@ def run():
         classifier = logistic_regression_classifier(X_train, y_train)
     elif (choice == 4):
         classifier = decision_tree_classifier(X_train, y_train)
-    elif (choice == 6):
-        predict_using_ann()
     else:
         classifier = get_all_classifiers_dict(X_train, y_train)
 
