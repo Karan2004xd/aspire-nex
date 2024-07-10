@@ -1,3 +1,9 @@
+About
+-----
+Contains two machine learning models implemented in python.
+- Model one is a credit card fault detector
+- Model two is a customer churn predictor
+
 Structure of repository
 -----------------------
 
